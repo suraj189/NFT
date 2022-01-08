@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.container {
+  width: 320px;
+  margin: 35px auto;
+  background-color: hsl(216, 50%, 16%);
+  border: 1px solid;
+  border-radius: 10px;
+  padding:  0 25px ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
+  padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primaryImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.primaryImageContainer:hover img {
+  background-color: hsl(178, 100%, 50%);
+  transition: ease-in-out;
+}
+
+.heading {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heading:hover ,.primaryCreator:hover{
+  color: hsl(178, 100%, 50%);
+  transition: ease-in-out;
+}
+
+.primaryDescription {
+  color: hsl(215, 32%, 27%);
+  font-weight: 400;
+}
+
+.icons ,.creatorContainer  {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.ethImage {
+  color: hsl(178, 100%, 50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ethDetail ,.timeLine {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.timeLine {
+  color: hsl(215, 32%, 27%);
+}
+
+.creatorContainer {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  justify-content: start
+}
+
+.avatar {
+   width: 35px;
+   border: 1px solid hsl(0, 0%, 100%);
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+.creatorDetails {
+  color: hsl(215, 32%, 27%);
+}
+
+.primaryCreator {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
